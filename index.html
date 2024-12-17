@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Pastures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.freepik.com/premium-photo/green-field-background-perfect-agriculture-outdoor-adventure-promotions-concept-agriculture-outdoor-adventure-green-field-promotions_918839-303663.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: rgba(0,0,0,0.5);
+            background-blend-mode: overlay;
+            
+        }
+
+
+        .header {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            
+            
+        }
+
+        .header h1 {
+            margin: 0;
+            color: #2c7a2c;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(44, 122, 44, 0.9);
+            padding: 15px;
+        }
+
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navigation a:hover {
+            color: #f0f0f0;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .test-container {
+            display: flex;
+            
+            justify-content: space-between;
+            margin-top: 20px;
+            /* display: flex;
+            justify-content: center; 
+             margin-top: 20px;
+             align-items: center;  */
+
+        }
+
+        .test-box {
+            width: 48%;
+            background-color: rgba(44, 122, 44, 0.1);
+            border: 1px solid #2c7a2c;
+            padding: 15px;
+            border-radius: 8px;
+            align-content: center;
+        }
+
+        .test-box h3 {
+            color: #2c7a2c;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="hidden">
+    <div class="header">
+        <h1>Green Pastures</h1>
+    </div>
+
+    <div class="navigation">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#report">Report</a>
+        <a href="crop.html">Crop Advisor</a>
+    </div>
+</div>
+
+    <div class="content">
+        <h2>Welcome to Green Pastures</h2>
+        <p>Green Pastures is your comprehensive agricultural resource, providing insights, advice, and support for farmers and agricultural enthusiasts.</p>
+        
+        <h3>Our Mission</h3>
+        <p>To empower farmers with knowledge, technology, and resources to improve agricultural productivity and sustainability.</p>
+    </div>
+
+    <div id="crop-advisor" class="container">
+        <h2>Crop Advisor</h2>
+        <p>Get expert advice and recommendations for your crops based on various factors such as soil type, climate, and crop variety.</p>
+        
+        <div class="test-container">
+            <div class="test-box">
+                <h3>Crop Suitability Assessment</h3>
+                <p>Analyze which crops are best suited for your specific land and conditions.</p>
+                <a href="crop.html"><button>Start Assessment</button></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="soil-tests" class="container">
+        <h2>Soil Analysis</h2>
+        <p>Understand your soil's characteristics to optimize crop growth and productivity.</p>
+        
+        <div class="test-container">
+            <div class="test-box">
+                <h3>Soil pH Test</h3>
+                <p>Determine the acidity or alkalinity of your soil, crucial for nutrient absorption.</p>
+                <button>Conduct pH Test</button>
+            </div>
+            <div class="test-box">
+                <h3>Soil Type Test</h3>
+                <p>Identify your soil composition to improve agricultural practices.</p>
+                <button>Analyze Soil Type</button>
+            </div>
+        </div>
+    </div>
+    <div id="crop-advisor" class="container">
+        <h2>Soil pH test</h2>
+        <p>Understand your soil's pH to optimize crop growth.</p>
+        
+        <div class="test-container">
+            <div class="test-box">
+                <h3>Soil pH test</h3>
+                <p>Determine the acidity or alkalinity of your soil, crucial for nutrient absorption.</p>
+                <a href="https://www.adwainstruments.com/support/knowledge-base/how-to-test-soil-ph"><button>Conduct pH Test</button></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="crop-advisor" class="container">
+        <h2>Soil Type Test</h2>
+        <p>Understand your soil's Type to optimize crop growth.</p>
+        
+        <div class="test-container">
+            <div class="test-box">
+                <h3>Soil Type Test</h3>
+                <p>Identify your soil composition to improve agricultural practices.</p>
+                <a href="https://hgic.clemson.edu/factsheet/soil-texture-analysis-the-jar-test/"><button>Analyze Soil Type</button></a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

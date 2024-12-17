@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Crop Advisor</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="header">
+        <h1>Green Pastures</h1>
+    </div>
+
+    <div class="navigation">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#report">Report</a>
+        <a href="crop.html">Crop Advisor</a>
+    </div>
+    <div class="container">
+        <h1>Farmer Crop Advisor</h1>
+        <form id="cropAdvisorForm">
+            <div class="form-group">
+                <label for="soilType">Soil Type</label>
+                
+                <select id="soilType" required>
+                    
+                    <option value="">Select Soil Type</option>
+                    <option value="clay">Clay</option>
+                    <option value="sandy">Sandy</option>
+                    <option value="loam">Loam</option>
+                    <option value="silt">Silt</option>
+                    <option value="silt">volcanic</option>
+                    <option value="silt">sandy loam</option>
+                    <option value="silt">clay loam</option>
+                    
+                    
+
+                </select>
+            
+            </div>
+            <div class="form-group">
+                <p id="pHmf" >To check your soil type : <a href="https://hgic.clemson.edu/factsheet/soil-texture-analysis-the-jar-test/"style="text-decoration: none; " >Check Soil type </a></p>
+            </div>
+
+            <div class="form-group">
+                <label for="soilPH">Soil pH Level</label>
+                <input type="number" id="soilPH" min="0" max="14" step="0.1" required>
+            </div>
+            
+            <div class="form-group">
+                <p id="pHmf">To check your soil pH press: <a href="https://www.adwainstruments.com/support/knowledge-base/how-to-test-soil-ph" style="text-decoration: none"; >Check Soil pH</a></p>
+            </div>
+           
+
+            <div class="form-group">
+                <label for="humidity">Average Humidity (%)</label>
+                <input type="number" id="humidity" min="0" max="100" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rainfall">Annual Rainfall (mm)</label>
+                <input type="number" id="rainfall" min="0" required>
+            </div>
+
+            <div class="form-group">
+                <label for="temperature">Average Temperature (°C)</label>
+                <input type="number" default="30" id="temperature" required>
+            </div>
+            
+     
+
+            <button type="submit" id="submitBtn">Get Crop Recommendations</button>
+        </form>
+
+        <div id="resultsContainer" style="display: none;">
+            <h2>Recommended Crops</h2>
+            <ul id="cropList"></ul>
+        </div>
+    </div>
+
+    <script src="cropjava.js">
+  
+    </script>
+</body>
+</html>
